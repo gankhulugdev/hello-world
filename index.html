@@ -1,49 +1,133 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link in Bio</title>
+    <style>
+      body {
+        background-color: rgb(152, 152, 152);
+      }
+      .main-container {
+        min-height: 100vh;
+        max-width: 1200px;
+        margin: auto;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background: rgb(206, 97, 0);
+        background: linear-gradient(
+          180deg,
+          rgba(206, 97, 0, 1) 50%,
+          rgba(247, 207, 151, 1) 100%
+        );
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <title>
-    Link in Bio
-  </title>
-  <style>
-    .main-container{
-      border: 1px red dashed;
-    }
+      .image-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+      }
+      .profile-image {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        background-color: rgb(152, 152, 152);
+      }
+      .name-row {
+        text-align: center;
+        color: white;
+      }
+      .social-icons-row {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      .social-icon {
+        height: 50px;
+        width: 50px;
+        /* opacity: 0.7; */
+        border-radius: 20%;
+      }
+      .social-icon:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        transition: box-shadow 0.4s;
+      }
+      .links-row {
+        display: flex;
+        flex-direction: column;
+      }
+      .link {
+        border: 1px white solid;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin: 15px;
+        font-size: large;
+        color: white;
+      }
+      .link:hover {
+        cursor: pointer;
+        background-color: #69370b;
+        transition: background-color 0.4s;
+      }
+    </style>
+  </head>
 
-    .image-row{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 50px;
-      max-height: 50px;
-      border-radius: 50px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    .name-row{
-      color: red
-    }
-    .social-icons-row{
-      color: red
-    }
-    .links-row{
-      color: red
-    }
-  </style>
-</head>
+  <body>
+    <div class="main-container">
+      <div class="image-row">
+        <img
+          class="profile-image"
+          src="https://www.artrage.com/wp-content/uploads/artrage4-logo.png"
+          alt="company Logo"
+        />
+      </div>
+      <div class="name-row">
+        <h2>Begen Touch</h2>
+        <h3>Where Technology Meets Creativity on Every Wall</h3>
+      </div>
+      <div class="social-icons-row">
+        <a href="https://github.com/gankhulugdev">
+          <img
+            class="social-icon"
+            src="https://static-00.iconduck.com/assets.00/github-square-icon-256x256-7bp3g5mc.png"
+            alt="git-hub"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/gankhulug-bayarsaikhan/">
+          <img
+            class="social-icon"
+            src="https://static-00.iconduck.com/assets.00/linkedin-icon-256x256-9ge3d19k.png"
+            alt="linkedin"
+        /></a>
 
-<body>
-
-  <div class="main-container">
-
-    <div class="image-row"><img src="https://www.artrage.com/wp-content/uploads/artrage4-logo.png" alt="company Logo" /></div>
-    <div class="name-row">name</div>
-    <div class="social-icons-row">social icon section</div>
-    <div class="links-row">links section</div>
-
-  </div>
-
-</body>
-
+        <a href="https://www.instagram.com/oblowery/?hl=en">
+          <img
+            class="social-icon"
+            src="https://cdn-icons-png.flaticon.com/256/1409/1409946.png"
+            alt="instagram"
+          />
+        </a>
+        <a
+          href="https://x.com/PUMA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          ><img
+            class="social-icon"
+            src="https://seeklogo.com/images/T/twitter-new-logo-8A0C4E0C58-seeklogo.com.png"
+            alt="twitter X"
+        /></a>
+      </div>
+      <div class="links-row">
+        <a class="link"> Experience Our Work </a>
+        <a class="link"> Behind the Scenes </a>
+        <a class="link"> Inspiration Hub </a>
+        <a class="link"> Design Your Space </a>
+        <a class="link"> Client Spotlight </a>
+        <a class="link"> Design Lab </a>
+      </div>
+    </div>
+  </body>
 </html>
